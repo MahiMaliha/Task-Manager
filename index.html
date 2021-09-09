@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task Manager</title>
+        <!-- Bootstrap CDN Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+</head>
+
+<body>
+        <header>
+                <nav class="navbar navbar-dark  container mt-5">
+                        <div class="container-fluid d-flex justify-content-center mt-5">
+                                <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                                </form>
+                        </div>
+                </nav>
+        </header>
+        <main>
+                <section class="container pt-5 border border-secondary pb-5 mt-5 mb-5">
+                        <div class="row">
+                                <div class="col-lg-7 d-flex justify-content-center">
+                                        <div>
+                                                <h3 class="text-success pb-2">Add My To Do List</h3>
+                                                <form class="d-flex pb-3">
+                                                        <input id="task-input" class="form-control me-2" type="search"
+                                                                placeholder="Add Your Task" aria-label="Search">
+                                                        <div class="d-grid gap-2 col-4 mx-auto">
+                                                                <button id="add-task" class="btn btn-success"
+                                                                        type="button">Add
+                                                                        Task</button>
+                                                        </div>
+                                                </form>
+                                                <!-- Dynamically Added Value -->
+
+                                                <div id="task-list">
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-5 d-flex justify-content-center">
+                                        <table class="table border border-success">
+                                                <thead>
+                                                        <tr>
+                                                                <th class="text-center" scope="col">Total Task</th>
+                                                                <th class="text-center" scope="col">Completed</th>
+                                                                <th class="text-center" scope="col">Incomplete</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td class="text-center">
+                                                                        <h3 id="total-task">0</h3>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                        <h3 id="completed-task">0</h3>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                        <h3 id="incomplete-task">0</h3>
+                                                                </td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                        </div>
+                </section>
+        </main>
+
+        <!-- Bootstrap Bundle Link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <!-- Javascript Link -->
+        <script src="app.js"></script>
+</body>
+
+</html>
